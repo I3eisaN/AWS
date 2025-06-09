@@ -1,3 +1,5 @@
+# Launch Template脚本
+
 #!/bin/bash
 yum update -y
 amazon-linux-extras install epel -y
