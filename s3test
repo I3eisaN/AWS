@@ -1,0 +1,13 @@
+aws configure输入访问密钥ID等
+
+# 列出所有
+aws s3 ls
+
+# 列出存储桶下的文件
+aws s3 ls s3://[列出的新建存储桶下的文件]
+
+# 尝试上传文件
+aws s3 cp test.txt s3://[列出的新建存储桶下的文件](上传本地的test.txt到存储桶的根目录)
+
+# 尝试下载文件
+aws s3 cp s3://[列出的新建存储桶下的文件]/test.txt file1-copied-back.txt（把s3中的test.txt下载到当前目录并重命名为file1-copied-back.txt）
