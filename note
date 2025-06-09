@@ -1,0 +1,3 @@
+# 安装apache的压力测试工具ab命令
+sudo yum update -y
+sudo yum install httpd-tools
