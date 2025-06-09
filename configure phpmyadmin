@@ -1,0 +1,21 @@
+# ec2实例连接到rds数据库
+
+cd /var/www/html
+
+# 解压 phpMyAdmin 包
+tar xvf phpmyadmin-latest-all-languages.tar.gz
+
+# 删除安装包
+rm -f phpmyadmin-latest-all-languages.tar.gz
+
+# 重命名为 phpmyadmin
+# '*'更改为解压后的目录名，如phpMyAdmin-5.2.1-all……
+mv phpMyAdmin-*-all-languages phpmyadmin
+
+cd phpmyadmin
+
+# 拷贝配置模板
+cp config.sample.inc.php config.inc.php
+
+# 替换localhost为 RDS Endpoint
+vi /./config.inc.php
